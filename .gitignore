@@ -1,0 +1,48 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Testing / coverage / type checkers
+.coverage
+.pytest_cache/
+htmlcov/
+.mypy_cache/
+.pytype/
+
+# IDEs / editors
+.idea/
+.vscode/
+*.iml
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+secrets.json
+*.key
+
+# Logs, databases, misc
+*.log
+logs/
+*.sqlite3
+*.db
+
+# Optional (node, if present)
+node_modules/
