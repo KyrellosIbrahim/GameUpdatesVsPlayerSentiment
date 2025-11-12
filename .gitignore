@@ -46,3 +46,7 @@ logs/
 
 # Optional (node, if present)
 node_modules/
+
+# Data
+*.xlsx
+*.csv
