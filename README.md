@@ -1,61 +1,134 @@
-# Game Cosmetics vs. Player Performance
+# Controversial Game Updates vs. Player Engagement and Sentiment
 
-### Do certain cosmetics have an impact on player performance in video games?
+### How do controversial updates or announcements affect player engagement and sentiment in popular online games?
 
-I have been wondering this question for AGES. Every multiplayer game has a phenomena called "Sweat skins," where higher performing players tend to flock to certain cosmetics, and thus it gives itself the name. When these certain cosmetics start to gain a reputation, general player attitude tends to change toward that cosmetic as well.
+I think this question has some good direction going for it. It's no surprise that players respond to game updates according to whether they like them or not, and this is no different. What I want to explore deeper is how drastically playercount and reviews affected, and if there are any long term affects on a game's community.
 
-The question I'm trying to solve is whether this community phenomena has real effects on players' performance. Most game companies claim that the cosmetics they sell have no impact on gameplay. I want to put that claim to the test.
+A lot of data may end up being sourced from scraping instead of official APIs, but I'm willing to work with it for the sake of discovery!
 
 ---
 
 ## Research Question & Hypothesis
 
 ### Core Research Question:
-**Do certain cosmetics have an impact on player performance in video games?**
+**How do controversial updates or announcements affect player engagement and sentiment in popular online games?**
 
 ### Competing Hypotheses:
-1. **The Psychological Intimidation Hypothesis:** Prestigious cosmetics cause measurable performance changes in opponents (decreased accuracy, increased hesitation, poorer decision-making)
-2. **The Correlation-Only Hypothesis:** High-skill players simply prefer certain cosmetics, but the skins themselves don't cause performance changes in opponents
-3. **The Visual Advantage Hypothesis:** Some cosmetics may provide subtle gameplay advantages through better camouflage or visual clarity
+1. **The Short-Term Outrage Hypothesis:** Controversial updates cause immediate player count drops and negative sentiment spikes, but communities recover within weeks as players adapt or accept changes
+2. **The Long-Term Erosion Hypothesis:** Major controversial updates cause sustained damage to player retention and community sentiment that persists for months or permanently alters the game's trajectory
+3. **The Vocal Minority Hypothesis:** Online outrage is amplified by a small subset of vocal players, while actual player engagement metrics remain relatively stable
+4. **The Cumulative Impact Hypothesis:** Individual controversial updates may have minimal impact, but multiple controversies compound to create significant long-term player base decline
 
 ---
 
 ## Methodology Overview
 
-### Data Collection Strategy:
-1. **Skin Classification:** Categorize cosmetics into tiers based on:
-   - Rarity (Common, Rare, Epic, Legendary)
-   - Community perception ("Sweaty," "Prestige," "Default," "Pay-to-Lose")
-   - Visual characteristics (brightness, size, animation complexity)
+### Case Studies:
+1. **Overwatch 2: PvE Mode Cancellation (May 2023)**
+   - Blizzard's cancellation of promised PvE content
+   - Community backlash and "review bombing"
+   - Data sources: Reddit sentiment, Twitch viewership, unofficial player trackers
 
-2. **Performance Metrics:** Analyze player performance when facing different cosmetic types:
-   - Accuracy against specific skin types
-   - Time-to-decision in engagements
-   - Survival rate in encounters
-   - Damage dealt/taken ratios
+2. **RuneScape: Evolution of Combat (2012) & Other Controversies**
+   - Fundamental combat system overhaul
+   - "Old School RuneScape" split as direct response
+   - Subscription-based model amplifies financial impact
+   - Additional controversial updates: Wilderness removal, microtransactions, etc.
+
+### Data Collection Strategy:
+1. **Player Engagement Metrics:**
+   - Steam player counts (where available)
+   - Third-party player trackers
+
+2. **Sentiment Analysis:**
+   - Steam review scores and timeline
+
+3. **Timeline Analysis:**
+   - Mark exact dates of controversial announcements/updates
+   - Track metrics weekly for 3 months before and after
+   - Identify immediate impact vs. sustained trends
 
 ### Analytical Approach:
-- **Comparative Analysis:** Performance metrics vs. default skins
-- **Sentiment Analysis:** Community perception from forums and social media
-- **Correlation Testing:** Between skin reputation and actual performance data
+- **Time Series Analysis:** Track engagement metrics before, during, and after controversies
+- **Sentiment Analysis:** NLP on Reddit/Twitter to quantify community mood
+- **Comparative Analysis:** Compare magnitude of different controversies
+- **Longitudinal Study:** Assess whether games recover or experience permanent damage
+- **Control Comparisons:** Compare controversial updates to non-controversial updates
 
 ---
 
 ## Expected Challenges & Limitations
 
-1. **Data Availability:** Most detailed engagement data is proprietary
-2. **Confounding Variables:** Skill matching, map positioning, team composition
-3. **Causation vs. Correlation:** Determining if skins cause performance changes or simply correlate with skilled players
-4. **Sample Bias:** Community perception may create self-fulfilling prophecies
+1. **Data Availability:** 
+   - Many games lack public player count APIs
+   - Historical data may be incomplete or unavailable
+   - Some platforms (console) don't share engagement metrics
+
+2. **Attribution Complexity:**
+   - Multiple factors affect player counts (seasonal trends, competing games, holidays)
+   - Difficult to isolate update impact from other variables
+   - Confounding events (other controversies, content droughts, marketing)
+
+3. **Sample Bias:**
+   - Online sentiment may not represent silent majority
+   - Reddit/Twitter users may be more vocal than average players
+   - Self-selection bias in review bombing
+
+4. **Temporal Factors:**
+   - Natural player attrition over time
+   - Game lifecycle stages (launch, mid-life, decline)
+   - Seasonal variations in engagement
+
+5. **Platform Fragmentation:**
+   - Multi-platform games require aggregated data
+   - Different platforms may show different trends
 
 ---
 
 ## Potential Implications
 
-If we find evidence supporting the psychological impact hypothesis:
-- **Game Design:** Could inform future cosmetic design principles
-- **Esports:** Might influence skin restrictions in competitive play
-- **Player Psychology:** Better understanding of in-game decision making
-- **Business Models:** Ethical considerations for "psychological advantage" cosmetics
+### If we find evidence of significant impact:
+- **Game Development:** Importance of community communication and transparency
+- **Update Strategy:** Risk assessment for controversial changes
+- **Community Management:** Early warning signs and damage control strategies
+- **Business Models:** Financial implications of player churn from controversies
+
+### If we find minimal long-term impact:
+- **Vocal Minority Effect:** Online outrage may not translate to actual player behavior
+- **Player Retention:** Established player bases may be more resilient than assumed
+- **Risk Tolerance:** Developers may have more freedom to make bold changes
+
+### Cross-Game Patterns:
+- Do certain types of updates consistently cause more damage? (monetization, gameplay, content removal)
+- Do subscription-based games suffer more than free-to-play?
+- Does genre matter? (MMO vs. competitive shooter vs. battle royale)
+- Can games recover from controversies, and if so, how?
 
 ---
+
+## Analysis Framework
+
+### Metrics to Track:
+1. **Engagement Metrics:**
+   - Daily/weekly active players
+   - Peak concurrent players
+   - Session duration (if available)
+   - Twitch viewership hours
+
+2. **Sentiment Metrics:**
+   - Review score changes
+   - Reddit sentiment polarity
+   - Positive vs. negative keyword frequency
+   - Subreddit growth/decline
+
+3. **Community Health:**
+   - Post frequency
+   - Comment engagement
+   - Content creator activity
+   - New player onboarding rates
+
+### Statistical Tests:
+- Time series analysis with breakpoint detection
+- Pre-post comparison t-tests
+- Correlation between sentiment and player counts
+- Regression analysis controlling for confounding variables
